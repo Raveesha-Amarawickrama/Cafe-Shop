@@ -1,6 +1,6 @@
 import { createContext, useState, useContext, useEffect } from 'react';
 import axios from 'axios';
-import { useAuth } from './AuthContext';
+import { useAuth } from './AuthContext.js';
 import toast from 'react-hot-toast';
 import serverURL from "../serverURL.js";
 
