@@ -1,17 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { AuthProvider } from './contexts/AuthContext';
-import { CartProvider } from './contexts/CartContext';
+import { AuthProvider } from './contexts/AuthContext.js';
+import { CartProvider } from './contexts/CartContext.js';
 import { Toaster } from 'react-hot-toast';
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import Products from './pages/Products';
-import ProductDetail from './components/products/ProductDetail';
-import CartPage from './pages/CartPage';
-import Login from './components/auth/Login';
-import Register from './components/auth/Register';
-import PrivateRoute from './components/PrivateRoute';
-import MenuManagement from './pages/admin/MenuManagement';
-import UserManagement from "./pages/admin/UserManagement.jsx";
+import Layout from './components/Layout.js';
+import Home from './pages/Home.js';
+import Products from './pages/Products.js';
+import ProductDetail from './components/products/ProductDetail.js';
+import CartPage from './pages/CartPage.js';
+import Login from './components/auth/Login.js';
+import Register from './components/auth/Register.js';
+import PrivateRoute from './components/PrivateRoute.js';
+import MenuManagement from './pages/admin/MenuManagement.js';
+import UserManagement from "./pages/admin/UserManagement.js";
 
 function App() {
     return (
