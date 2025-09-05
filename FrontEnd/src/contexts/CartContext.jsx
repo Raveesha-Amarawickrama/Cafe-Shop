@@ -1,6 +1,6 @@
 import { createContext, useState, useContext, useEffect } from 'react';
 import axios from 'axios';
-import { useAuth } from './AuthContext.js';
+import { useAuth } from './AuthContext.jsx';
 import toast from 'react-hot-toast';
 import serverURL from "../serverURL.js";
 
@@ -146,4 +146,3 @@ export const CartProvider = ({ children }) => {
 
     return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 };
-
