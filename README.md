@@ -70,12 +70,34 @@ npm run build    # Build optimized production assets
 
 ## Configuration
 
-* Create a `.env` file in `BackEnd` and `FrontEnd` (if necessary).
+* Create a `.env` file in `BackEnd` and `FrontEnd` .
 * Provide configuration for:
 
-  * API endpoints
-  * Database credentials
-  * Authentication keys
+# Server Configuration
+PORT=3000
+NODE_ENV=development
+FRONTEND_URL=https://localhost:5173
+
+# JWT Configuration
+JWT_SECRET=your-super-secure-jwt-secret-key-change-this-in-production
+JWT_EXPIRE=7d
+
+STRIPE_SECRET_KEY=your-super-secure--secret-key
+
+# Auth0 Configuration
+Front End
+VITE_AUTH0_DOMAIN=       # e.g., cafecore.us.auth0.com
+VITE_AUTH0_CLIENT_ID=
+VITE_AUTH0_AUDIENCE=https://cafe-core-api
+
+BackEnd
+PORT=3000
+MONGODB_URI=
+JWT_SECRET=
+JWT_EXPIRE=1d
+STRIPE_SECRET_KEY=
+AUTH0_DOMAIN=
+AUTH0_AUDIENCE=https://cafe-core-api
 
 ---
 
